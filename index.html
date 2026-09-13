@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>سن الطرق | للمقاولات والتوريدات</title>
+
+    <!-- الخط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        /* =====================================================
+           GENERAL
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Cairo", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f6f7f9;
+            color: #071d2b;
+        }
+
+        button,
+        input {
+            font-family: inherit;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            height: 75px;
+
+            background: #071d2b;
+
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 5%;
+
+            position: sticky;
+            top: 0;
+
+            z-index: 1000;
+        }
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+
+            background: #ffc107;
+
+            color: #071d2b;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 24px;
+
+            clip-path: polygon(
+                50% 0,
+                100% 100%,
+                0 100%
+            );
+        }
+
+
+        .logo strong {
+            display: block;
+
+            font-size: 20px;
+        }
+
+
+        .logo span {
+            display: block;
+
+            font-size: 11px;
+
+            color: #ddd;
+        }
+
+
+        nav {
+            display: flex;
+
+            gap: 30px;
+        }
+
+
+        nav a {
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            transition: .3s;
+        }
+
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+
+        .header-actions {
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+        }
+
+
+        .search-box {
+            width: 220px;
+
+            background: white;
+
+            border-radius: 30px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 0 12px;
+        }
+
+
+        .search-box input {
+            width: 100%;
+
+            border: none;
+
+            outline: none;
+
+            padding: 10px;
+
+            font-size: 13px;
+        }
+
+
+        .cart-icon {
+            position: relative;
+
+            background: transparent;
+
+            border: none;
+
+            color: white;
+
+            font-size: 24px;
+
+            cursor: pointer;
+        }
+
+
+        .cart-icon span {
+            position: absolute;
+
+            top: -7px;
+            right: -8px;
+
+            width: 20px;
+            height: 20px;
+
+            border-radius: 50%;
+
+            background: #ffc107;
+
+            color: #071d2b;
+
+            font-size: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            min-height: 430px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    rgba(3,20,32,.95),
+                    rgba(3,20,32,.65),
+                    rgba(3,20,32,.10)
+                ),
+
+                url("road-stone.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 50px 7%;
+
+            color: white;
+        }
+
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+
+        .small-title {
+            color: #ffc107;
+
+            font-weight: 700;
+
+            margin-bottom: 10px;
+        }
+
+
+        .hero h1 {
+
+            font-size: 50px;
+
+            line-height: 1.3;
+        }
+
+
+        .hero h1 span {
+            color: #ffc107;
+        }
+
+
+        .hero p {
+
+            font-size: 17px;
+
+            line-height: 2;
+
+            color: #eee;
+
+            margin: 15px 0 25px;
+        }
+
+
+        .main-btn {
+
+            display: inline-block;
+
+            background: #ffc107;
+
+            color: #071d2b;
+
+            border: none;
+
+            padding: 13px 30px;
+
+            border-radius: 9px;
+
+            text-decoration: none;
+
+            font-weight: 800;
+
+            cursor: pointer;
+
+            transition: .3s;
+        }
+
+
+        .main-btn:hover {
+            transform: translateY(-3px);
+
+            background: #ffca28;
+        }
+
+
+        /* =====================================================
+           FEATURES
+        ===================================================== */
+
+        .features {
+
+            background: white;
+
+            padding: 25px 6%;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .feature {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 10px;
+
+            border-left: 1px solid #ddd;
+        }
+
+
+        .feature:last-child {
+            border-left: none;
+        }
+
+
+        .feature-icon {
+            font-size: 32px;
+        }
+
+
+        .feature h3 {
+            font-size: 15px;
+        }
+
+
+        .feature p {
+
+            color: #777;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           PRODUCTS
+        ===================================================== */
+
+        .products-section {
+
+            padding: 70px 6%;
+        }
+
+
+        .section-header {
+
+            margin-bottom: 35px;
+        }
+
+
+        .section-header h2 {
+
+            font-size: 34px;
+
+            margin-bottom: 5px;
+        }
+
+
+        .section-header p {
+
+            color: #777;
+        }
+
+
+        .products {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .product-card {
+
+            background: white;
+
+            border-radius: 14px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,.07);
+
+            transition: .3s;
+        }
+
+
+        .product-card:hover {
+
+            transform: translateY(-7px);
+        }
+
+
+        .product-card img {
+
+            width: 100%;
+
+            height: 230px;
+
+            object-fit: cover;
+        }
+
+
+        .product-info {
+
+            padding: 22px;
+        }
+
+
+        .product-number {
+
+            color: #999;
+
+            font-size: 12px;
+        }
+
+
+        .product-info h3 {
+
+            font-size: 24px;
+
+            margin-top: 5px;
+        }
+
+
+        .yellow-line {
+
+            width: 45px;
+
+            height: 4px;
+
+            background: #ffc107;
+
+            margin: 10px 0 15px;
+        }
+
+
+        .product-info p {
+
+            color: #777;
+
+            line-height: 1.8;
+        }
+
+
+        .product-info ul {
+
+            list-style: none;
+
+            margin: 15px 0;
+
+            line-height: 2;
+
+            font-size: 14px;
+        }
+
+
+        .product-buttons {
+
+            display: flex;
+
+            gap: 8px;
+        }
+
+
+        .cart-btn,
+        .quote-btn {
+
+            flex: 1;
+
+            padding: 10px;
+
+            border-radius: 7px;
+
+            cursor: pointer;
+
+            font-weight: 700;
+        }
+
+
+        .cart-btn {
+
+            background: #071d2b;
+
+            color: white;
+
+            border: none;
+        }
+
+
+        .quote-btn {
+
+            background: white;
+
+            border: 1px solid #bbb;
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about {
+
+            background: white;
+
+            padding: 70px 7%;
+        }
+
+
+        .about-content {
+
+            max-width: 800px;
+        }
+
+
+        .about-content > span {
+
+            color: #ffc107;
+
+            font-weight: 800;
+        }
+
+
+        .about h2 {
+
+            font-size: 35px;
+
+            margin: 10px 0;
+        }
+
+
+        .about h2 strong {
+
+            color: #ffc107;
+        }
+
+
+        .about p {
+
+            color: #666;
+
+            line-height: 2;
+        }
+
+
+        .about-items {
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 25px;
+        }
+
+
+        .about-items strong {
+
+            color: #ffc107;
+
+            margin-left: 8px;
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta {
+
+            background:
+
+                linear-gradient(
+                    rgba(4,23,36,.94),
+                    rgba(4,23,36,.94)
+                ),
+
+                url("road-stone.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            color: white;
+
+            padding: 45px 7%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+        .cta h2 {
+
+            font-size: 28px;
+        }
+
+
+        .cta p {
+
+            color: #ddd;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            background: #061a28;
+
+            color: white;
+
+            padding: 45px 7% 20px;
+        }
+
+
+        .footer-content {
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr;
+
+            gap: 40px;
+        }
+
+
+        .footer-content h2 {
+
+            color: #ffc107;
+
+            margin-bottom: 8px;
+        }
+
+
+        .footer-content h3 {
+
+            margin-bottom: 12px;
+        }
+
+
+        .footer-content a {
+
+            display: block;
+
+            color: #ddd;
+
+            text-decoration: none;
+
+            margin: 7px 0;
+        }
+
+
+        .footer-content p {
+
+            color: #ccc;
+        }
+
+
+        .copyright {
+
+            border-top: 1px solid #29404e;
+
+            margin-top: 30px;
+
+            padding-top: 20px;
+
+            text-align: center;
+
+            color: #aaa;
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           CART
+        ===================================================== */
+
+        .cart-overlay {
+
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(0,0,0,.65);
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            z-index: 2000;
+        }
+
+
+        .cart {
+
+            width: 90%;
+
+            max-width: 500px;
+
+            max-height: 80vh;
+
+            overflow-y: auto;
+
+            background: white;
+
+            border-radius: 15px;
+
+            padding: 25px;
+
+            position: relative;
+        }
+
+
+        .close-cart {
+
+            position: absolute;
+
+            top: 15px;
+
+            left: 15px;
+
+            border: none;
+
+            background: #eee;
+
+            width: 35px;
+
+            height: 35px;
+
+            border-radius: 50%;
+
+            cursor: pointer;
+
+            font-size: 18px;
+        }
+
+
+        .cart h2 {
+
+            margin-bottom: 20px;
+        }
+
+
+        .cart-item {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding: 15px 0;
+
+            border-bottom: 1px solid #ddd;
+        }
+
+
+        .cart-item button {
+
+            border: none;
+
+            background: #071d2b;
+
+            color: white;
+
+            padding: 5px 10px;
+
+            margin: 2px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+        }
+
+
+        .cart-bottom {
+
+            margin-top: 20px;
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            nav {
+                display: none;
+            }
+
+
+            .search-box {
+                width: 170px;
+            }
+
+
+            .features {
+
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            .products {
+
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            header {
+
+                padding: 12px 4%;
+            }
+
+
+            .search-box {
+
+                display: none;
+            }
+
+
+            .hero {
+
+                min-height: 500px;
+
+                padding: 35px 6%;
+            }
+
+
+            .hero h1 {
+
+                font-size: 37px;
+            }
+
+
+            .hero p {
+
+                font-size: 14px;
+            }
+
+
+            .features {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .feature {
+
+                border-left: none;
+
+                border-bottom: 1px solid #ddd;
+            }
+
+
+            .products {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .about-items {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .cta {
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 20px;
+            }
+
+
+            .footer-content {
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            ▲
+        </div>
+
+        <div>
+
+            <strong>
+                سن الطرق
+            </strong>
+
+            <span>
+                للمقاولات والتوريدات
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home">
+            الرئيسية
+        </a>
+
+        <a href="#products">
+            المنتجات
+        </a>
+
+        <a href="#about">
+            عن الشركة
+        </a>
+
+        <a href="#contact">
+            تواصل معنا
+        </a>
+
+    </nav>
+
+
+    <div class="header-actions">
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="ابحث عن منتج..."
+            >
+
+            <span>
+                🔍
+            </span>
+
+        </div>
+
+
+        <button
+            class="cart-icon"
+            onclick="openCart()"
+        >
+
+            🛒
+
+            <span id="cartCount">
+                0
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+
+    <div class="hero-content">
+
+
+        <div class="small-title">
+
+            جودة والتزام .. شريك نجاحك
+
+        </div>
+
+
+        <h1>
+
+            سن الطرق
+
+            <br>
+
+            <span>
+                بجودة عالية
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            توريد السن بمختلف المقاسات
+            للمشروعات والطرق والمقاولات
+            بأفضل جودة.
+
+        </p>
+
+
+        <a
+            href="#products"
+            class="main-btn"
+        >
+
+            اطلب الآن
+
+        </a>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURES
+===================================================== -->
+
+<section class="features">
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            🚚
+        </div>
+
+        <div>
+
+            <h3>
+                توصيل للمواقع
+            </h3>
+
+            <p>
+                توريد حسب احتياج المشروع
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            🛡️
+        </div>
+
+        <div>
+
+            <h3>
+                جودة مضمونة
+            </h3>
+
+            <p>
+                جودة مناسبة لأعمال الطرق
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            📦
+        </div>
+
+        <div>
+
+            <h3>
+                كميات كبيرة
+            </h3>
+
+            <p>
+                توريد للمشروعات والمقاولات
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">
+            📞
+        </div>
+
+        <div>
+
+            <h3>
+                تواصل سريع
+            </h3>
+
+            <p>
+                01004706038
+            </p>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section
+    class="products-section"
+    id="products"
+>
+
+
+    <div class="section-header">
+
+        <h2>
+            منتجاتنا
+        </h2>
+
+        <p>
+            اختر المقاس المناسب لمشروعك
+        </p>
+
+    </div>
+
+
+
+    <div
+        class="products"
+        id="productsContainer"
+    >
+
+
+        <!-- ================= سن 6 ================= -->
+
+        <div
+            class="product-card"
+            data-name="سن مقاس 6"
+        >
+
+
+            <img
+                src="road-stone.jpg"
+                alt="سن مقاس 6"
+            >
+
+
+            <div class="product-info">
+
+
+                <span class="product-number">
+                    المنتج 01
+                </span>
+
+
+                <h3>
+                    سن مقاس 6
+                </h3>
+
+
+                <div class="yellow-line"></div>
+
+
+                <p>
+
+                    مناسب لأعمال الطرق
+                    والردم والتأسيس
+                    والمشروعات.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        ✓ متوفر بكميات كبيرة
+                    </li>
+
+                    <li>
+                        ✓ توريد للمواقع
+                    </li>
+
+                    <li>
+                        ✓ جودة عالية
+                    </li>
+
+                </ul>
+
+
+                <div class="product-buttons">
+
+
+                    <button
+                        class="cart-btn"
+                        onclick="addToCart('سن مقاس 6')"
+                    >
+
+                        🛒 إضافة للسلة
+
+                    </button>
+
+
+                    <button
+                        class="quote-btn"
+                        onclick="requestQuote('سن مقاس 6')"
+                    >
+
+                        عرض سعر
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ================= سن 1 ================= -->
+
+        <div
+            class="product-card"
+            data-name="سن مقاس 1"
+        >
+
+
+            <img
+                src="road-stone.jpg"
+                alt="سن مقاس 1"
+            >
+
+
+            <div class="product-info">
+
+
+                <span class="product-number">
+                    المنتج 02
+                </span>
+
+
+                <h3>
+                    سن مقاس 1
+                </h3>
+
+
+                <div class="yellow-line"></div>
+
+
+                <p>
+
+                    سن مقاس 1 للاستخدامات
+                    المختلفة في أعمال
+                    المقاولات والطرق.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        ✓ متوفر بكميات كبيرة
+                    </li>
+
+                    <li>
+                        ✓ توريد للمواقع
+                    </li>
+
+                    <li>
+                        ✓ جودة عالية
+                    </li>
+
+                </ul>
+
+
+                <div class="product-buttons">
+
+
+                    <button
+                        class="cart-btn"
+                        onclick="addToCart('سن مقاس 1')"
+                    >
+
+                        🛒 إضافة للسلة
+
+                    </button>
+
+
+                    <button
+                        class="quote-btn"
+                        onclick="requestQuote('سن مقاس 1')"
+                    >
+
+                        عرض سعر
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ================= سن 2 ================= -->
+
+        <div
+            class="product-card"
+            data-name="سن مقاس 2"
+        >
+
+
+            <img
+                src="road-stone.jpg"
+                alt="سن مقاس 2"
+            >
+
+
+            <div class="product-info">
+
+
+                <span class="product-number">
+                    المنتج 03
+                </span>
+
+
+                <h3>
+                    سن مقاس 2
+                </h3>
+
+
+                <div class="yellow-line"></div>
+
+
+                <p>
+
+                    سن مقاس 2 مناسب
+                    للاستخدامات المختلفة
+                    في أعمال المقاولات.
+
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        ✓ متوفر بكميات كبيرة
+                    </li>
+
+                    <li>
+                        ✓ توريد للمواقع
+                    </li>
+
+                    <li>
+                        ✓ جودة عالية
+                    </li>
+
+                </ul>
+
+
+                <div class="product-buttons">
+
+
+                    <button
+                        class="cart-btn"
+                        onclick="addToCart('سن مقاس 2')"
+                    >
+
+                        🛒 إضافة للسلة
+
+                    </button>
+
+
+                    <button
+                        class="quote-btn"
+                        onclick="requestQuote('سن مقاس 2')"
+                    >
+
+                        عرض سعر
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about"
+    id="about"
+>
+
+
+    <div class="about-content">
+
+
+        <span>
+            عن الشركة
+        </span>
+
+
+        <h2>
+
+            شريكك في توريد
+
+            <strong>
+                سن الطرق
+            </strong>
+
+        </h2>
+
+
+        <p>
+
+            نوفر سن الطرق بمقاسات مختلفة
+            لتلبية احتياجات المشروعات والمقاولين.
+            هدفنا تقديم جودة مناسبة وخدمة توريد
+            سريعة للمواقع.
+
+        </p>
+
+
+        <div class="about-items">
+
+
+            <div>
+
+                <strong>
+                    ✓
+                </strong>
+
+                جودة عالية
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ✓
+                </strong>
+
+                كميات كبيرة
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ✓
+                </strong>
+
+                توريد للمواقع
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ✓
+                </strong>
+
+                أسعار تنافسية
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT CTA
+===================================================== -->
+
+<section class="cta">
+
+
+    <div>
+
+        <h2>
+            محتاج كمية سن لمشروعك؟
+        </h2>
+
+        <p>
+            تواصل معنا للحصول على عرض سعر
+        </p>
+
+    </div>
+
+
+    <a
+        href="https://wa.me/201004706038"
+        target="_blank"
+        class="main-btn"
+    >
+
+        💬 تواصل معنا
+
+    </a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer id="contact">
+
+
+    <div class="footer-content">
+
+
+        <div>
+
+            <h2>
+                سن الطرق
+            </h2>
+
+            <p>
+                للمقاولات والتوريدات
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                روابط الموقع
+            </h3>
+
+            <a href="#home">
+                الرئيسية
+            </a>
+
+            <a href="#products">
+                المنتجات
+            </a>
+
+            <a href="#about">
+                عن الشركة
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                تواصل معنا
+            </h3>
+
+            <p>
+                📞 01004706038
+            </p>
+
+            <a
+                href="https://wa.me/201004706038"
+                target="_blank"
+            >
+                💬 واتساب
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 سن الطرق للمقاولات والتوريدات
+        - جميع الحقوق محفوظة
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     CART
+===================================================== -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+>
+
+
+    <div class="cart">
+
+
+        <button
+            class="close-cart"
+            onclick="closeCart()"
+        >
+
+            ✕
+
+        </button>
+
+
+        <h2>
+            🛒 سلة المشتريات
+        </h2>
+
+
+        <div id="cartItems">
+
+        </div>
+
+
+        <div class="cart-bottom">
+
+
+            <h3>
+
+                إجمالي الكمية:
+
+                <span id="cartTotal">
+                    0
+                </span>
+
+            </h3>
+
+
+            <br>
+
+
+            <button
+                class="main-btn"
+                onclick="sendOrder()"
+            >
+
+                إرسال الطلب على واتساب
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<script>
+
+    /* =====================================================
+       CART
+    ===================================================== */
+
+    let cart = [];
+
+
+    /* إضافة منتج */
+
+    function addToCart(productName) {
+
+
+        let existingProduct =
+            cart.find(
+                product =>
+                product.name === productName
+            );
+
+
+        if (existingProduct) {
+
+            existingProduct.quantity++;
+
+        } else {
+
+            cart.push({
+
+                name: productName,
+
+                quantity: 1
+
+            });
+
+        }
+
+
+        updateCart();
+
+
+        alert(
+            "تمت إضافة " +
+            productName +
+            " إلى السلة 🛒"
+        );
+
+    }
+
+
+
+    /* تحديث السلة */
+
+    function updateCart() {
+
+
+        const cartItems =
+            document.getElementById(
+                "cartItems"
+            );
+
+
+        const cartCount =
+            document.getElementById(
+                "cartCount"
+            );
+
+
+        const cartTotal =
+            document.getElementById(
+                "cartTotal"
+            );
+
+
+        let total = 0;
+
+
+        cartItems.innerHTML = "";
+
+
+        cart.forEach(
+            (product, index) => {
+
+
+                total +=
+                    product.quantity;
+
+
+                const item =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                item.className =
+                    "cart-item";
+
+
+                item.innerHTML = `
+
+                    <div>
+
+                        <strong>
+                            ${product.name}
+                        </strong>
+
+                        <br>
+
+                        الكمية:
+                        ${product.quantity}
+
+                    </div>
+
+
+                    <div>
+
+                        <button
+                            onclick="increaseProduct(${index})"
+                        >
+                            +
+                        </button>
+
+
+                        <button
+                            onclick="decreaseProduct(${index})"
+                        >
+                            -
+                        </button>
+
+                    </div>
+
+                `;
+
+
+                cartItems.appendChild(item);
+
+            }
+        );
+
+
+        cartCount.textContent =
+            total;
+
+
+        cartTotal.textContent =
+            total;
+
+    }
+
+
+
+    /* زيادة الكمية */
+
+    function increaseProduct(index) {
+
+        cart[index].quantity++;
+
+        updateCart();
+
+    }
+
+
+
+    /* تقليل الكمية */
+
+    function decreaseProduct(index) {
+
+
+        cart[index].quantity--;
+
+
+        if (
+            cart[index].quantity <= 0
+        ) {
+
+            cart.splice(index, 1);
+
+        }
+
+
+        updateCart();
+
+    }
+
+
+
+    /* فتح السلة */
+
+    function openCart() {
+
+        document
+            .getElementById("cartOverlay")
+            .style.display = "flex";
+
+    }
+
+
+
+    /* غلق السلة */
+
+    function closeCart() {
+
+        document
+            .getElementById("cartOverlay")
+            .style.display = "none";
+
+    }
+
+
+
+    /* =====================================================
+       SEARCH
+    ===================================================== */
+
+    document
+        .getElementById("searchInput")
+        .addEventListener(
+            "input",
+            function () {
+
+
+                const searchValue =
+                    this.value
+                    .toLowerCase()
+                    .trim();
+
+
+                const products =
+                    document.querySelectorAll(
+                        ".product-card"
+                    );
+
+
+                products.forEach(
+                    product => {
+
+
+                        const name =
+                            product
+                            .dataset
+                            .name
+                            .toLowerCase();
+
+
+                        if (
+                            name.includes(
+                                searchValue
+                            )
+                        ) {
+
+                            product.style.display =
+                                "";
+
+                        } else {
+
+                            product.style.display =
+                                "none";
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+
+    /* =====================================================
+       WHATSAPP QUOTE
+    ===================================================== */
+
+    function requestQuote(productName) {
+
+
+        const message =
+            "السلام عليكم، أريد الاستفسار عن سعر " +
+            productName;
+
+
+        const whatsappURL =
+            "https://wa.me/201004706038?text=" +
+            encodeURIComponent(message);
+
+
+        window.open(
+            whatsappURL,
+            "_blank"
+        );
+
+    }
+
+
+
+    /* =====================================================
+       SEND ORDER
+    ===================================================== */
+
+    function sendOrder() {
+
+
+        if (cart.length === 0) {
+
+            alert(
+                "السلة فارغة!"
+            );
+
+            return;
+
+        }
+
+
+        let message =
+            "السلام عليكم، أريد طلب المنتجات التالية:\n\n";
+
+
+        cart.forEach(
+            product => {
+
+                message +=
+                    "- " +
+                    product.name +
+                    " × " +
+                    product.quantity +
+                    "\n";
+
+            }
+        );
+
+
+        message +=
+            "\nمن فضلكم أرسلوا لي عرض السعر.";
+
+
+        const whatsappURL =
+            "https://wa.me/201004706038?text=" +
+            encodeURIComponent(message);
+
+
+        window.open(
+            whatsappURL,
+            "_blank"
+        );
+
+    }
+
+
+</script>
+
+
+</body>
+
+</html>
